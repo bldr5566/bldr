@@ -17,5 +17,6 @@ notifications:
       - bob76828@gmail.com
       - lalayueh@gmail.com
       - dy93_@hotmail.com
+      - drumrick.1600@gmail.com
     on_success: change # default: change
     on_failure: always # default: always
