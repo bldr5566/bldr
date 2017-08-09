@@ -16,7 +16,8 @@
     "eslint": "eslint .",
     "eslint-fix": "eslint --fix .",
     "eslint-precommit": "git diff --name-only --cached | grep -E \".*\\.js$\" | xargs eslint",
-    "test": "better-npm-run test"
+    "test": "better-npm-run test",
+    "build": "better-npm-run build"
   },
   "betterScripts": {
     "test": {
@@ -24,11 +25,18 @@
       "env": {
         "NODE_ENV": "test"
       }
+    },
+    "build": {
+      "command": "gulp build",
+      "env": {
+        "NODE_ENV": "production"
+      }
     }
   },
   "pre-commit": [
     "eslint-precommit",
-    "test"
+    "test",
+    "build"
   ],
   "devDependencies": {
     "babel-cli": "^6.24.1",
@@ -44,21 +52,29 @@
     "babel-polyfill": "^6.23.0",
     "babel-preset-env": "^1.6.0",
     "babel-preset-react": "^6.24.1",
+    "babel-preset-react-optimize": "^1.0.1",
     "babel-preset-stage-1": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
     "babel-register": "^6.24.1",
     "better-npm-run": "^0.1.0",
     "chai": "^4.1.1",
+    "del": "^3.0.0",
     "eslint": "^3.5.0",
     "eslint-config-airbnb": "^14.1.0",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^4.0.0",
     "eslint-plugin-react": "^6.2.2",
     "eslint-plugin-security": "^1.2.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^7.0.0",
+    "gulp-help": "^1.6.1",
+    "gulp-util": "^3.0.8",
     "mocha": "^3.5.0",
     "npm-check-updates": "^2.12.1",
     "nyc": "^11.1.0",
     "pre-commit": "^1.2.2",
+    "require-dir": "^0.3.2",
+    "run-sequence": "^2.1.0",
     "sinon": "^3.1.0",
     "sinon-chai": "^2.12.0"
   }
