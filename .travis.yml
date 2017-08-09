@@ -13,5 +13,9 @@ script:
 
 notifications:
   email:
-    - bob76828@gmail.com
-    - lalayueh@gmail.com
+    recipients:
+      - bob76828@gmail.com
+      - lalayueh@gmail.com
+      - dy93_@hotmail.com
+    on_success: change # default: change
+    on_failure: always # default: always
