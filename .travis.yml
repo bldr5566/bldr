@@ -10,3 +10,8 @@ install:
 script:
   - npm run eslint
   - npm run test
+
+notifications:
+  email:
+    - bob76828@gmail.com
+    - lalayueh@gmail.com
