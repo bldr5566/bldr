@@ -2,7 +2,24 @@
   "name": "bldr",
   "version": "1.0.0",
   "description": "",
-  "author": "",
+  "contributors": [
+    {
+      "name": "bob",
+      "email": "bob76828@gmail.com"
+    },
+    {
+      "name": "lala",
+      "email": "lalayueh@gmail.com"
+    },
+    {
+      "name": "david",
+      "email": "dy93_@hotmail.com"
+    },
+    {
+      "name": "rick",
+      "email": "drumrick.1600@gmail.com"
+    }
+  ],
   "license": "MIT",
   "repository": {
     "type": "git",
